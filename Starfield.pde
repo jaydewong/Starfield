@@ -71,8 +71,13 @@ class OddballParticle implements Particle//uses an interface
   public void show(){
     fill(101,142,250);
     rect(-1,250,300,50);
-    fill(58, 246, 97);
-    ellipse((float)myX, (float)myY, 20,20);
+    fill(99);
+    rect((float)myX, (float)myY - 10, 40,20);
+    triangle((float)myX + 40, (float)myY -10, (float)myX + 40,(float)myY+ 11, (float)myX + 70, (float)myY -10);
+    fill(255,0,0);
+    triangle((float)myX + 20, (float)myY -50, (float)myX + 20,(float)myY - 20, (float)myX + 60, (float)myY -20);
+    fill(99);
+    rect((float)myX + 15, (float)myY -50, 5, 50);
   }
 }
 
@@ -80,7 +85,8 @@ class JumboParticle extends NormalParticle
 {
   //your code here 
   public void show(){
-    ellipse((float)myX,(float)myY, 50,50);
+    triangle((float)myX, (float)myY - 10, (float)myX + 20, (float)myY + 20, (float)myX - 20,(float)myY + 20);
+    triangle((float)myX, (float)myY + 30, (float)myX - 20, (float)myY, (float)myX + 20,(float)myY);
   }
 }
 
